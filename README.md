@@ -11,23 +11,6 @@ Terraform project that deploys an Ubuntu EC2 instance with CloudWatch monitoring
 - CloudWatch dashboard for CPU, memory, disk, network, security, and status checks
 - SNS email alerts for high CPU, memory, disk usage, failed SSH logins, and high sudo activity
 
-## Deploy
-
-Requirements: Terraform 1.5+, AWS credentials, and permissions to create EC2, VPC, IAM, CloudWatch, and SNS resources.
-
-```bash
-cd terraform
-terraform init
-terraform plan
-terraform apply
-```
-
-Confirm the SNS subscription from the email sent by AWS. Retrieve the instance SSH command with:
-
-```bash
-terraform output -raw ssh_command
-```
-
 ## Configure the CloudWatch Agent
 
 The instance installs the agent during provisioning. Copy the included configuration to the server and start it:
