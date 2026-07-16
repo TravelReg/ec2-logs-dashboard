@@ -42,6 +42,12 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
   -c file:/home/ubuntu/amazon-cloudwatch-agent.json -s
 ```
 
+## Dashboard
+
+The `dashboard-1` CloudWatch dashboard displays EC2, agent, and security metrics.
+
+![CloudWatch dashboard](docs/cloudwatch-dashboard.png)
+
 ## Useful files
 
 | Path | Purpose |
