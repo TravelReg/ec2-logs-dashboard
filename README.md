@@ -1,6 +1,6 @@
 # EC2 CloudWatch Monitoring
 
-Terraform project that deploys an Ubuntu EC2 instance with CloudWatch monitoring, security log collection, a dashboard, and SNS email alerts.
+This Terraform project builds a small AWS monitoring environment around an Ubuntu EC2 instance. It collects instance performance and SSH authentication activity in CloudWatch, presents the data in a dashboard, and sends SNS email alerts when configured thresholds are exceeded.
 
 ![Architecture](docs/architechure.png)
 
