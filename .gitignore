@@ -1,0 +1,58 @@
+# Terraform working files and state (may contain infrastructure metadata and secrets)
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keep dependency selections reproducible
+!.terraform.lock.hcl
+
+# Local Terraform inputs and plans
+*.tfvars
+*.tfvars.json
+!*.example.tfvars
+!*.example.tfvars.json
+*.tfplan
+*.tfplan.*
+plan.out
+
+# Generated and private SSH / TLS key material
+*.pem
+*.key
+*.ppk
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+secrets.*
+*.secret
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
