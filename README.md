@@ -1,6 +1,6 @@
 # EC2 CloudWatch Monitoring
 
-This Terraform project builds a small AWS monitoring environment around an Ubuntu EC2 instance. It collects instance performance and SSH authentication activity in CloudWatch, presents the data in a dashboard, and sends SNS email alerts when configured thresholds are exceeded.
+This Terraform project builds an AWS monitoring environment around an Ubuntu EC2 instance. It collects instance performance and SSH authentication activity in CloudWatch, presents the data in a dashboard, and sends SNS email alerts when configured thresholds are exceeded.
 
 ![Architecture](docs/architechure.png)
 
